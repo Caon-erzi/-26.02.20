@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --bg-base: #0a0e17;
@@ -19,9 +17,9 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-base);
   color: var(--text-primary);
-  background-image: 
-      radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08), transparent 25%),
-      radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
   background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
@@ -57,15 +55,18 @@ input:focus {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: var(--bg-base); 
+  background: var(--bg-base);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: rgba(56, 189, 248, 0.3); 
+  background: rgba(56, 189, 248, 0.3);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(56, 189, 248, 0.5); 
+  background: rgba(56, 189, 248, 0.5);
 }
 
 .glow-text {
